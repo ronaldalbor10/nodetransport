@@ -22,6 +22,12 @@ helpers.lenArray = async(array)=>{
    return array.length;
 };
 
+helpers.capitalWords = (texto)=>{
+   var textTemp = texto.toLowerCase();
+   textTemp = textTemp[0].toUpperCase() + textTemp.slice(1);
+   return textTemp;
+}
+
 helpers.getInfoPieChart = async(user, year)=>{
    //console.log(user,year);
   
